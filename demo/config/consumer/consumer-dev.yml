@@ -1,1 +1,15 @@
 from: consumer-dev.yml
+
+spring:
+  application:
+    name: demo-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/q527470061/demo-config-server.git
+          search-paths: demo/config/consumer,demo/config/provider
+          username: 527470061@qq.com
+          password: qin11223344
+server:
+  port: 8004
